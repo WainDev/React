@@ -1,18 +1,17 @@
 import React from "react";
 
 import styles from "./Post.module.css";
+import Button from "../UI/button/Button";
 
-function PostItems({ titile, print }) {
+function PostItems({ title, print }) {
   return (
     <>
       <div className={styles.post}>
         <div className={styles.post__info}>
-          <h2 className={styles.post__title}>{titile}</h2>
+          <h2 className={styles.post__title}>{title}</h2>
           <p className={styles.post__print}>{print}</p>
         </div>
-        <div className={styles.post__btns}>
-          <button className={styles.post__btn}>Удалить</button>
-        </div>
+        <Button disabled>Удалить</Button>
       </div>
     </>
   );

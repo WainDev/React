@@ -1,7 +1,13 @@
 import React from "react";
 
-function Button(props) {
-  return <button></button>;
+import styles from "./Button.module.css";
+
+function Button({ children, ...props }) {
+  return (
+    <button {...props} className={styles.post__btn}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;

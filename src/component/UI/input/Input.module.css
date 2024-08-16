@@ -1,0 +1,19 @@
+.Input {
+  width: 100%;
+  padding: 5px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.Input::before {
+  content: "2";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+input:focus {
+  border: none;
+}
